@@ -7,7 +7,7 @@ router.use( '/', (req,res)=>{
     var problem_list = jsfs.readFileSync(path.join(__dirname,'problem.json'));
     // report page
     res.render("report.ejs",{
-        title: "Simple Report System",
+        title: "NCKU CSIE PC-Room Report System",
         problem_list
     });
 })
